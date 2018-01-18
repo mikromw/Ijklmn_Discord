@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="discordlayout.yassinedeveloper.com.discordlayout.MyAccount">
+<LinearLayout
+    android:background="@color/black_overlay"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:text="Unverified Account "
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button"
+            style="@android:style/Widget.Holo.Light.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:text="Verify Acount"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/discordlogowhite" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/TextStyle"
+            android:text="USERNAME" />
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/TextStyle" />
+
+        <TextView
+            style="@style/TextStyle"
+            tools:text="Email" />
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/TextStyle" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:text="CURRENT PASSWORD" />
+        <EditText
+            android:id="@+id/password"
+            style="@style/TextStyle" />
+
+        <Button
+            android:id="@+id/done"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Edit Profile" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

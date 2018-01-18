@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nameservertextlist"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:layout_margin="8dp"
+    android:background="@drawable/roubbutton"
+    android:padding="10dp"
+    android:textColor="@android:color/holo_blue_bright"
+    android:textSize="24sp"
+    android:textStyle="bold"
+   >
+</TextView>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/bottom3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/friendslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/black_overlay"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/listfreinds"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/discordlogowhite" />
+
+            <ListView
+                android:id="@+id/listserver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:scrollIndicators="none" />
+            <ImageView
+                android:id="@+id/addserver"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@android:drawable/ic_menu_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutfriends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#454545"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+         >
+
+            <EditText
+                android:id="@+id/searchtext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:hint="Find or start a converation"
+                android:textColorHint="#ffffff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/findfriends"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:background="#8c8c8c"
+                android:drawableLeft="@android:drawable/sym_call_outgoing"
+                android:text="Friends"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#ffffff" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="DIRECT MESSAGES"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#afafaf" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usernameserver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#454545"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/texttitleviewserver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/menu_icon" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                android:drawableRight="@android:drawable/ic_menu_myplaces"
+                android:paddingLeft="10dp"
+                android:text="Create Instant Invite"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/buttonserver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#4b4b4b"
+                android:drawableLeft="@drawable/hash"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1a1919"
+        android:id="@+id/bottom3"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:text="Logout "
+            android:id="@+id/logout" />
+
+        <TextView
+            android:id="@+id/userviewname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/logout"
+            android:gravity="center_horizontal"
+            android:paddingTop="4dp"
+
+            android:text="tsetsetsetsetsets"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/setting_activity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="4dp"
+            android:src="@drawable/settinmasd" />
+    </LinearLayout>
+
+</RelativeLayout>
